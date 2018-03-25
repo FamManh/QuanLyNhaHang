@@ -19,14 +19,11 @@ namespace SaiGonRes
 
        
 
-        private void btnVN1_Click(object sender, EventArgs e)
-        {
-            LoadFormAddFood();
-        }
+        
         public void LoadFormAddFood()
         {
             fAddFood fAddFood = new fAddFood();
-            fAddFood.Show();
+            fAddFood.ShowDialog();
             if (fAddFood.FormClosedd())
             {
                 this.Close();
@@ -36,6 +33,11 @@ namespace SaiGonRes
         private void btnBlock_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            LoadFormAddFood();
         }
     }
 }

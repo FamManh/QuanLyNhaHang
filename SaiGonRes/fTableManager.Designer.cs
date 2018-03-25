@@ -44,6 +44,7 @@
             this.btn8 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn7 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btn30 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn6 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn5 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn4 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -134,7 +135,7 @@
             this.bunifuThinButton278 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton279 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.btn30 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lbNameStaff = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -153,6 +154,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lbNameStaff);
             this.panel1.Controls.Add(this.btnBlock);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -438,6 +440,31 @@
             this.panel8.Size = new System.Drawing.Size(230, 117);
             this.panel8.TabIndex = 32;
             // 
+            // btn30
+            // 
+            this.btn30.ActiveBorderThickness = 1;
+            this.btn30.ActiveCornerRadius = 20;
+            this.btn30.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn30.ActiveForecolor = System.Drawing.Color.White;
+            this.btn30.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn30.BackgroundImage")));
+            this.btn30.ButtonText = "30";
+            this.btn30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn30.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn30.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn30.IdleBorderThickness = 1;
+            this.btn30.IdleCornerRadius = 20;
+            this.btn30.IdleFillColor = System.Drawing.Color.Gray;
+            this.btn30.IdleForecolor = System.Drawing.Color.White;
+            this.btn30.IdleLineColor = System.Drawing.Color.Gray;
+            this.btn30.Location = new System.Drawing.Point(18, 29);
+            this.btn30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn30.Name = "btn30";
+            this.btn30.Size = new System.Drawing.Size(192, 54);
+            this.btn30.TabIndex = 0;
+            this.btn30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btn6
             // 
             this.btn6.ActiveBorderThickness = 1;
@@ -587,6 +614,7 @@
             this.btn1.Size = new System.Drawing.Size(43, 80);
             this.btn1.TabIndex = 33;
             this.btn1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // panel7
             // 
@@ -1126,7 +1154,6 @@
             this.btn25.Size = new System.Drawing.Size(75, 48);
             this.btn25.TabIndex = 12;
             this.btn25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn25.Click += new System.EventHandler(this.btnVN1_Click);
             // 
             // nvgpMangVe
             // 
@@ -2511,30 +2538,15 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "By the Staff";
             // 
-            // btn30
+            // lbNameStaff
             // 
-            this.btn30.ActiveBorderThickness = 1;
-            this.btn30.ActiveCornerRadius = 20;
-            this.btn30.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn30.ActiveForecolor = System.Drawing.Color.White;
-            this.btn30.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn30.BackgroundImage")));
-            this.btn30.ButtonText = "30";
-            this.btn30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn30.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn30.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn30.IdleBorderThickness = 1;
-            this.btn30.IdleCornerRadius = 20;
-            this.btn30.IdleFillColor = System.Drawing.Color.Gray;
-            this.btn30.IdleForecolor = System.Drawing.Color.White;
-            this.btn30.IdleLineColor = System.Drawing.Color.Gray;
-            this.btn30.Location = new System.Drawing.Point(18, 29);
-            this.btn30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn30.Name = "btn30";
-            this.btn30.Size = new System.Drawing.Size(192, 54);
-            this.btn30.TabIndex = 0;
-            this.btn30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbNameStaff.AutoSize = true;
+            this.lbNameStaff.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameStaff.Location = new System.Drawing.Point(23, 19);
+            this.lbNameStaff.Name = "lbNameStaff";
+            this.lbNameStaff.Size = new System.Drawing.Size(129, 26);
+            this.lbNameStaff.TabIndex = 5;
+            this.lbNameStaff.Text = "Tên nhân viên";
             // 
             // fTableManager
             // 
@@ -2552,6 +2564,7 @@
             this.Text = "Phần mềm quản lý quán cafe";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
@@ -2679,5 +2692,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton278;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton279;
         private Bunifu.Framework.UI.BunifuThinButton2 btn30;
+        private System.Windows.Forms.Label lbNameStaff;
     }
 }

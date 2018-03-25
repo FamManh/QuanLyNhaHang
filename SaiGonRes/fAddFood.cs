@@ -20,6 +20,7 @@ namespace SaiGonRes
         public fAddFood()
         {
             InitializeComponent();
+            closed = false;
         }
 
         private void btnBlock_Click(object sender, EventArgs e)
