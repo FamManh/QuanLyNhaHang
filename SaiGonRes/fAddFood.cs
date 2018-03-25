@@ -13,7 +13,7 @@ namespace SaiGonRes
     public partial class fAddFood : Form
     {
         public static bool closed = false;
-        public static bool FormClosed()
+        public static bool FormClosedd()
         {
             return closed;
         }

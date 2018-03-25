@@ -27,7 +27,7 @@ namespace SaiGonRes
         {
             fAddFood fAddFood = new fAddFood();
             fAddFood.Show();
-            if (fAddFood.FormClosed())
+            if (fAddFood.FormClosedd())
             {
                 this.Close();
             }
