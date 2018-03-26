@@ -123,3 +123,4 @@ E:\GitHub\QuanLyNhaHang\SaiGonRes\obj\Debug\SaiGonRes.csproj.CoreCompileInputs.c
 E:\GitHub\QuanLyNhaHang\SaiGonRes\obj\Debug\SaiGonRes.exe
 E:\GitHub\QuanLyNhaHang\SaiGonRes\obj\Debug\SaiGonRes.pdb
 E:\GitHub\QuanLyNhaHang\SaiGonRes\obj\Debug\SaiGonRes.fLoginStaff.resources
+E:\GitHub\QuanLyNhaHang\SaiGonRes\obj\Debug\SaiGonRes.fAdmin.resources

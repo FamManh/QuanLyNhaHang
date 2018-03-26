@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SaiGonRes.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,27 +17,32 @@ namespace SaiGonRes
         {
             InitializeComponent();
         }
-
+        #region Event
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            fTableManager f = new fTableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            if (Login(txbUserName.Text, txbPassword.Text))
+            {
+                lbWarning.Visible = false;
+                fAdmin f = new fAdmin();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+                lbWarning.Visible = true;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
-        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
+        #endregion
+        #region Methods
+        bool Login(string userName, string password)
         {
-            if (MessageBox.Show("Bạn có thực sự muốn thoát chương trình.", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
-            {
-                e.Cancel = true;
-
-            }
+            return AccountBLL.Instance.Login(userName, password);
         }
+        #endregion
     }
 }

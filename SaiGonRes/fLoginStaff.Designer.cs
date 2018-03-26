@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLoginStaff));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn1 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn2 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -40,13 +41,12 @@
             this.btn7 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn8 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn9 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnadditional = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn0 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txbPIN = new System.Windows.Forms.TextBox();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +64,32 @@
             this.panel1.Size = new System.Drawing.Size(324, 768);
             this.panel1.TabIndex = 0;
             // 
+            // btnExit
+            // 
+            this.btnExit.ActiveBorderThickness = 1;
+            this.btnExit.ActiveCornerRadius = 20;
+            this.btnExit.ActiveFillColor = System.Drawing.SystemColors.Control;
+            this.btnExit.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnExit.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.ButtonText = "Thoát khỏi hệ thống";
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnExit.IdleBorderThickness = 1;
+            this.btnExit.IdleCornerRadius = 20;
+            this.btnExit.IdleFillColor = System.Drawing.SystemColors.Control;
+            this.btnExit.IdleForecolor = System.Drawing.Color.Black;
+            this.btnExit.IdleLineColor = System.Drawing.Color.Black;
+            this.btnExit.Location = new System.Drawing.Point(0, 683);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(321, 71);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.btn1);
@@ -75,7 +101,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btn7);
             this.flowLayoutPanel1.Controls.Add(this.btn8);
             this.flowLayoutPanel1.Controls.Add(this.btn9);
-            this.flowLayoutPanel1.Controls.Add(this.btn);
+            this.flowLayoutPanel1.Controls.Add(this.btnadditional);
             this.flowLayoutPanel1.Controls.Add(this.btn0);
             this.flowLayoutPanel1.Controls.Add(this.btnDelete);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 253);
@@ -318,30 +344,31 @@
             this.btn9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
-            // btn
+            // btnadditional
             // 
-            this.btn.ActiveBorderThickness = 1;
-            this.btn.ActiveCornerRadius = 20;
-            this.btn.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btn.ActiveForecolor = System.Drawing.Color.Black;
-            this.btn.ActiveLineColor = System.Drawing.Color.Silver;
-            this.btn.BackColor = System.Drawing.SystemColors.Control;
-            this.btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn.BackgroundImage")));
-            this.btn.ButtonText = "";
-            this.btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn.IdleBorderThickness = 1;
-            this.btn.IdleCornerRadius = 20;
-            this.btn.IdleFillColor = System.Drawing.Color.Silver;
-            this.btn.IdleForecolor = System.Drawing.Color.Black;
-            this.btn.IdleLineColor = System.Drawing.Color.Silver;
-            this.btn.Location = new System.Drawing.Point(4, 243);
-            this.btn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(99, 81);
-            this.btn.TabIndex = 9;
-            this.btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnadditional.ActiveBorderThickness = 1;
+            this.btnadditional.ActiveCornerRadius = 20;
+            this.btnadditional.ActiveFillColor = System.Drawing.Color.Silver;
+            this.btnadditional.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnadditional.ActiveLineColor = System.Drawing.Color.Silver;
+            this.btnadditional.BackColor = System.Drawing.SystemColors.Control;
+            this.btnadditional.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnadditional.BackgroundImage")));
+            this.btnadditional.ButtonText = "";
+            this.btnadditional.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnadditional.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadditional.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnadditional.IdleBorderThickness = 1;
+            this.btnadditional.IdleCornerRadius = 20;
+            this.btnadditional.IdleFillColor = System.Drawing.Color.Silver;
+            this.btnadditional.IdleForecolor = System.Drawing.Color.Black;
+            this.btnadditional.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnadditional.Location = new System.Drawing.Point(4, 243);
+            this.btnadditional.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnadditional.Name = "btnadditional";
+            this.btnadditional.Size = new System.Drawing.Size(99, 81);
+            this.btnadditional.TabIndex = 9;
+            this.btnadditional.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnadditional.Click += new System.EventHandler(this.btnadditional_Click);
             // 
             // btn0
             // 
@@ -446,32 +473,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // btnExit
-            // 
-            this.btnExit.ActiveBorderThickness = 1;
-            this.btnExit.ActiveCornerRadius = 20;
-            this.btnExit.ActiveFillColor = System.Drawing.SystemColors.Control;
-            this.btnExit.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnExit.ActiveLineColor = System.Drawing.Color.Black;
-            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
-            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
-            this.btnExit.ButtonText = "Thoát khỏi hệ thống";
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnExit.IdleBorderThickness = 1;
-            this.btnExit.IdleCornerRadius = 20;
-            this.btnExit.IdleFillColor = System.Drawing.SystemColors.Control;
-            this.btnExit.IdleForecolor = System.Drawing.Color.Black;
-            this.btnExit.IdleLineColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(0, 683);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(321, 71);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // fLoginStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,7 +508,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btn7;
         private Bunifu.Framework.UI.BunifuThinButton2 btn8;
         private Bunifu.Framework.UI.BunifuThinButton2 btn9;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnadditional;
         private Bunifu.Framework.UI.BunifuThinButton2 btn0;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
         private System.Windows.Forms.PictureBox pictureBox1;

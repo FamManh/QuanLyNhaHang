@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTableManager));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbNameStaff = new System.Windows.Forms.Label();
             this.btnBlock = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -135,7 +136,6 @@
             this.bunifuThinButton278 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton279 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.lbNameStaff = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -161,6 +161,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1362, 65);
             this.panel1.TabIndex = 0;
+            // 
+            // lbNameStaff
+            // 
+            this.lbNameStaff.AutoSize = true;
+            this.lbNameStaff.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameStaff.Location = new System.Drawing.Point(23, 19);
+            this.lbNameStaff.Name = "lbNameStaff";
+            this.lbNameStaff.Size = new System.Drawing.Size(129, 26);
+            this.lbNameStaff.TabIndex = 5;
+            this.lbNameStaff.Text = "Tên nhân viên";
             // 
             // btnBlock
             // 
@@ -405,6 +415,7 @@
             this.btn8.Size = new System.Drawing.Size(43, 80);
             this.btn8.TabIndex = 41;
             this.btn8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -430,6 +441,7 @@
             this.btn7.Size = new System.Drawing.Size(43, 80);
             this.btn7.TabIndex = 40;
             this.btn7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // panel8
             // 
@@ -489,6 +501,7 @@
             this.btn6.Size = new System.Drawing.Size(43, 80);
             this.btn6.TabIndex = 39;
             this.btn6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn5
             // 
@@ -514,6 +527,7 @@
             this.btn5.Size = new System.Drawing.Size(43, 80);
             this.btn5.TabIndex = 38;
             this.btn5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn4
             // 
@@ -539,6 +553,7 @@
             this.btn4.Size = new System.Drawing.Size(43, 80);
             this.btn4.TabIndex = 37;
             this.btn4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn3
             // 
@@ -564,6 +579,7 @@
             this.btn3.Size = new System.Drawing.Size(43, 80);
             this.btn3.TabIndex = 36;
             this.btn3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
@@ -589,6 +605,7 @@
             this.btn2.Size = new System.Drawing.Size(43, 80);
             this.btn2.TabIndex = 35;
             this.btn2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
@@ -2537,16 +2554,6 @@
             this.tabPage4.Size = new System.Drawing.Size(1354, 610);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "By the Staff";
-            // 
-            // lbNameStaff
-            // 
-            this.lbNameStaff.AutoSize = true;
-            this.lbNameStaff.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameStaff.Location = new System.Drawing.Point(23, 19);
-            this.lbNameStaff.Name = "lbNameStaff";
-            this.lbNameStaff.Size = new System.Drawing.Size(129, 26);
-            this.lbNameStaff.TabIndex = 5;
-            this.lbNameStaff.Text = "Tên nhân viên";
             // 
             // fTableManager
             // 

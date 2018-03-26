@@ -38,6 +38,7 @@
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbWarning = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -45,6 +46,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lbWarning);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.panel4);
@@ -54,12 +56,12 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(497, 256);
+            this.panel1.Size = new System.Drawing.Size(1366, 768);
             this.panel1.TabIndex = 0;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(312, 196);
+            this.btnExit.Location = new System.Drawing.Point(748, 479);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(120, 41);
             this.btnExit.TabIndex = 4;
@@ -69,7 +71,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(169, 196);
+            this.btnLogin.Location = new System.Drawing.Point(605, 479);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(120, 41);
             this.btnLogin.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             this.panel4.Controls.Add(this.txbPassword);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(3, 127);
+            this.panel4.Location = new System.Drawing.Point(437, 371);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(491, 63);
             this.panel4.TabIndex = 2;
@@ -107,7 +109,7 @@
             // 
             this.panel3.Controls.Add(this.txbUserName);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(3, 58);
+            this.panel3.Location = new System.Drawing.Point(437, 302);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(491, 63);
             this.panel3.TabIndex = 1;
@@ -134,15 +136,27 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(497, 50);
+            this.panel2.Size = new System.Drawing.Size(1366, 50);
             this.panel2.TabIndex = 0;
+            // 
+            // lbWarning
+            // 
+            this.lbWarning.AutoSize = true;
+            this.lbWarning.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWarning.ForeColor = System.Drawing.Color.Red;
+            this.lbWarning.Location = new System.Drawing.Point(605, 441);
+            this.lbWarning.Name = "lbWarning";
+            this.lbWarning.Size = new System.Drawing.Size(248, 15);
+            this.lbWarning.TabIndex = 5;
+            this.lbWarning.Text = "Tên đăng nhập hoặc mật khẩu không đúng!!!";
+            this.lbWarning.Visible = false;
             // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(497, 256);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -150,8 +164,9 @@
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -172,6 +187,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lbWarning;
     }
 }
 

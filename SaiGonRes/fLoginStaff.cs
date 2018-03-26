@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SaiGonRes.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,11 @@ namespace SaiGonRes
         {
             InitializeComponent();
         }
-
+        public static string PinCode = "";
+        public string  GetPinCode()
+        {
+            return PinCode;
+        }
         private void btn1_Click(object sender, EventArgs e)
         {
             txbPIN.Text += "1";
@@ -80,8 +85,9 @@ namespace SaiGonRes
         {
             if (txbPIN.Text.Length == 3)
             {
-                if (txbPIN.Text == "555")
+                if (LoginStaffBLL.Instance.IsStaff(txbPIN.Text))
                 {
+                    PinCode = txbPIN.Text;
                     fTableManager fTableManager = new fTableManager();
                     this.Hide();
                     fTableManager.ShowDialog();
@@ -94,12 +100,22 @@ namespace SaiGonRes
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            txbPIN.Text = txbPIN.Text.Substring(0, txbPIN.Text.Length - 1);
+            if (txbPIN.Text.Length >=1)
+                txbPIN.Text = txbPIN.Text.Substring(0, txbPIN.Text.Length - 1);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnadditional_Click(object sender, EventArgs e)
+        {
+
+            fLogin f = new fLogin();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }
